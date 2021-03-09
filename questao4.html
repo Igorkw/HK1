@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 4</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <script>
+        var nomes = []
+
+        function adicionarNome(){
+            capturado = document.getElementById('receberNome').value 
+
+            if(capturado == ''){
+                alert('Informe algum nome válido')
+            }
+
+            if(capturado != ''){
+                if(nomes.indexOf(capturado) !== -1){
+                    alert('Nome já foi adicionado!')
+                }
+
+                else if(!isNaN(capturado)){
+                alert('Insira apenas palavras')
+                }
+
+                else{
+                    nomes.push(capturado)
+                    console.log(nomes)
+                    valorArray.textContent = nomes
+                    document.getElementById('receberNome').value = ''
+                }
+            }
+        }
+    </script>
+</head>
+<body> 
+    <h1>Questão 4</h1>
+    <input id="receberNome" placeholder="Adicione um nome ao Array" type="text">
+    <button id="adicionar" onclick="adicionarNome()">Adicionar</button>
+    <p id="valorArray"></p>
+</body>
+</html>

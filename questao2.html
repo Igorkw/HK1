@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 2</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <script>
+       var funcionarios = ['Alan','João','Vinicius','Rodrigo']
+
+        function receberNum(){
+           var valorCapturado = document.getElementById('valor').value
+
+           switch (parseInt(valorCapturado)){
+                case 0:
+                    valorDigitado.textContent = funcionarios[0]
+                    break
+
+                case 1: 
+                    valorDigitado.textContent = funcionarios[1]
+                    break
+                
+                case 2:
+                    valorDigitado.textContent = funcionarios[2]
+                    break
+
+                case 3:
+                    valorDigitado.textContent = funcionarios[3]
+                    break
+
+                default:
+                    alert('Pesquise apenas valor de 0 a 3!')
+            } 
+            document.getElementById('valor').value = ''
+        }
+    </script>
+</head>
+<body>
+        <h1>Questão 2</h1>
+        <input id="valor" type="text" placeholder="Digite um número de 0 a 3">
+        <button id="buscar" onclick="receberNum()" >Pesquisar</button>
+        <p id="valorDigitado"></p> 
+</body>
+</html>

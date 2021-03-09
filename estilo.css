@@ -1,0 +1,23 @@
+body{
+    background: #313131;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    padding: 5px;
+}
+button{
+    color: #fff;
+    background: #2338f3;
+    transition: 0.4s;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+button:hover{
+    color:#525252;
+    background:  #0ba6ff;
+    transition: 0.4s;
+    box-shadow: 0 0 25px #0ba6ff
+}
